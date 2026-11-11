@@ -57,6 +57,10 @@ h3{line-height:1.2}
 .hero-milestone-summary{color:#d5e4e2;font-size:.84rem;line-height:1.45}
 .hero-milestone a{display:inline-flex;align-items:center;gap:.42rem;min-height:44px;flex:none;color:var(--aqua);font-size:.82rem;font-weight:720;text-underline-offset:.24em}
 .hero-milestone a:hover{color:var(--white)}
+.hero-milestone-actions{display:grid;gap:.35rem;flex:none}
+.hero-milestone .brief-download{justify-content:center;padding:.55rem .7rem;border:1px solid var(--gold);background:var(--gold);color:#102d37;text-decoration:none;border-radius:4px}
+.hero-milestone .brief-download:hover{background:#f5d39a;color:#102d37}
+.hero-milestone-actions>a:last-child{justify-content:center}
 .hero-milestone a svg{width:.85rem;height:.85rem;flex:none}
 @media(max-width:45rem){.hero-milestone{align-items:flex-start;flex-direction:column;gap:.3rem}.hero-milestone a{min-height:44px}}
 .pillars{background:#e0eae2;border-bottom:1px solid #c9d9d0}
@@ -169,7 +173,10 @@ section.content{padding-block:clamp(3.35rem,7vw,7rem)}
             <h2 id="hero-milestone-title">Engineering validation and a one-cell prototype</h2>
             <p class="hero-milestone-summary">We’re preparing to bench-test assembly fit, service access, and handling.</p>
           </div>
+          <div class="hero-milestone-actions">
+            <a class="brief-download" href="downloads/JMS_Prototype_Brief_RevA.pdf" download type="application/pdf">Prototype brief · PDF</a>
           <a href="#development">View the development roadmap <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v11M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+          </div>
         </section>
       </div>
     </div>
