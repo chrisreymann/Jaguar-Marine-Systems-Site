@@ -1,33 +1,64 @@
-// Update each product here. Leave unknown prices, artwork, and URLs unset.
+// Jaguar Marine Systems merchandise catalog.
+// No product is available for purchase until a real checkout URL and approved price are supplied.
+// Images marked as references are NOT production-ready garment previews.
 const products = [
-  { name: 'Ocean Hero figurines', image: 'hero.webp', alt: 'Ocean Guardian #001 surfing above a coral reef and hex habitat module', description: 'Ocean Guardian #001 pairs a surfer with a wave and reef display base. Concept artwork shown.' },
-  { name: 'Stickers', description: 'Planned stickers inspired by the Ocean Guardians collection.' },
-  { name: 'Keychains', description: 'Planned pocket-sized Ocean Guardians collectibles.' },
-  { name: 'T-shirts', image: 'tee.webp', alt: 'Navy Ocean Guardian T-shirt concept featuring a surfer and reef', description: 'Surf and reef artwork inspired by Ocean Guardian #001. Concept mockup shown.' },
-  { name: 'Collectors card set', description: 'A planned physical card set featuring Ocean Guardians characters, waves, and reef habitats.' },
+  {
+    name: 'Ocean Guardian #001 T-shirt',
+    image: 'tee.webp',
+    alt: 'Ocean Guardian #001 T-shirt concept mockup featuring a surfer and coral reef',
+    description: 'Founding Ocean Guardians shirt with a surfer, wave, and coral habitat. Artwork extraction is under print-quality review; color, sizes, price, and release date are pending.'
+  },
+  {
+    name: 'Jaguar Marine Systems Hex Reef T-shirt',
+    imageUrl: 'assets/jaguar-logo.webp',
+    alt: 'Official Jaguar Marine Systems gold jaguar shield logo, shown as a brand reference rather than a shirt mockup',
+    description: 'A planned hexagonal reef engineering-inspired shirt. Official JMS shield shown as a brand reference; final garment graphic and sample are not yet approved.'
+  },
+  {
+    name: 'Balam Ha Institute Jaguar Badge T-shirt',
+    imageUrl: 'assets/balam-ha-institute-seal.webp',
+    alt: 'Official Balam Ha Institute circular seal with a spotted jaguar, shown as a design reference',
+    description: 'A planned institute shirt featuring a recognizably feline jaguar. Official institute seal shown as a reference; simplified apparel badge is being refined.'
+  },
+  {
+    name: 'Mangrove–Coral Integration T-shirt',
+    artworkStatus: 'Mangrove + hex reef artwork in review',
+    description: 'A new concept featuring mangroves, a modular hex reef, coral habitat, and exploratory drone seeding. Final print artwork, colors, and product details are pending.'
+  },
+  {
+    name: 'Ocean Hero figurines',
+    image: 'hero.webp',
+    alt: 'Ocean Guardian #001 surfer with a wave and reef display base, concept artwork',
+    description: 'Ocean Guardian #001 pairs a surfer with a wave and reef display base. Concept artwork shown; manufacturing and release details are pending.'
+  },
+  { name: 'Stickers', description: 'Planned stickers featuring Ocean Guardians, jaguar, and hex-reef artwork. Final designs and pricing are pending.' },
+  { name: 'Keychains', description: 'Planned pocket-sized Ocean Guardians and Jaguar Marine Systems collectibles. Final materials and pricing are pending.' },
+  { name: 'Collectors card set', description: 'A planned physical card set featuring Ocean Guardians characters, waves, reef habitats, and the hex-module story.' }
 ];
 
 const grid = document.querySelector('#products');
 const template = document.querySelector('#product-card');
-for (const product of products) {
-  const card = template.content.cloneNode(true);
-  card.querySelector('h3').textContent = product.name;
-  if (product.name === 'Collectors card set') card.querySelector('h3').id = 'collector-card-set';
-  card.querySelector('.pending').textContent = product.price ?? 'Coming soon';
-  card.querySelector('.description').textContent = product.description;
-  const art = card.querySelector('.card-art');
-  if (product.image) {
-    const image = document.createElement('img');
-    image.src = 'assets/ocean-guardians/' + product.image;
-    image.alt = product.alt;
-    image.loading = 'lazy';
-    art.append(image);
-  } else {
-    art.textContent = 'Artwork pending';
+if (grid && template) {
+  for (const product of products) {
+    const card = template.content.cloneNode(true);
+    card.querySelector('h3').textContent = product.name;
+    if (product.name === 'Collectors card set') card.querySelector('h3').id = 'collector-card-set';
+    card.querySelector('.pending').textContent = product.price ?? 'Coming soon';
+    card.querySelector('.description').textContent = product.description;
+    const art = card.querySelector('.card-art');
+    if (product.image || product.imageUrl) {
+      const image = document.createElement('img');
+      image.src = product.imageUrl ?? 'assets/ocean-guardians/' + product.image;
+      image.alt = product.alt ?? product.name + ' concept reference';
+      image.loading = 'lazy';
+      art.append(image);
+    } else {
+      art.textContent = product.artworkStatus ?? 'Artwork pending';
+    }
+    const link = card.querySelector('a');
+    link.href = product.checkoutUrl ?? product.inquiryUrl ??
+      'mailto:infobalamha@gmail.com?subject=' + encodeURIComponent('JMS merchandise inquiry — ' + product.name);
+    link.textContent = (product.checkoutUrl ? 'Shop ' : 'Ask about ') + product.name.toLowerCase();
+    grid.append(card);
   }
-  const link = card.querySelector('a');
-  link.href = product.checkoutUrl ?? product.inquiryUrl ??
-    'mailto:infobalamha@gmail.com?subject=' + encodeURIComponent('Ocean Guardians inquiry — ' + product.name);
-  link.textContent = (product.checkoutUrl ? 'Shop ' : 'Ask about ') + product.name.toLowerCase();
-  grid.append(card);
 }
