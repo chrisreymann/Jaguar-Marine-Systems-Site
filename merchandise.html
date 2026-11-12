@@ -64,6 +64,63 @@ footer{font-size:.83rem}
 .shop-gallery{background:#071e2a;color:#f6f4e9;padding:3.2rem 0}.shop-gallery h2{max-width:50rem}.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.gallery-grid figure{margin:0;background:#0b3040;border:1px solid #35626a;border-radius:.45rem;overflow:hidden}.gallery-grid img{width:100%;height:360px;object-fit:contain;display:block;padding:1rem}.gallery-grid figcaption{padding:.7rem 1rem;font-size:.8rem;color:#bce5dd}
 @media(max-width:1050px){.founding-card{grid-template-columns:1fr}.shirt-stage{min-height:310px}.shirt-info{min-height:260px}}
 @media(max-width:680px){.hero-grid,.founding-grid,.gallery-grid{grid-template-columns:1fr}.founding{padding-block:2rem}.founding-card{grid-template-columns:1fr}.shirt-stage{height:350px}.shirt-info{min-height:0}.gallery-grid img{height:300px}}
+
+/* Ocean Guardians storefront visual refresh — Rev C */
+:root{--ocean:#041522;--ocean2:#082b3a;--cyan:#43e4e0;--gold:#f1c58a;--ink:#eaf6f3}
+body{background:#061b27;color:var(--ink)}
+header,footer{background:#04101a;border-bottom:1px solid #2a6372}
+header{position:relative;z-index:10}nav{padding:.85rem 0}nav img{width:min(16rem,55vw)}
+.links a{color:#f0f6f5;font-weight:700;letter-spacing:.025em}.links a:hover{color:var(--cyan)}
+[aria-current]{color:var(--cyan)!important}
+.eyebrow{color:var(--gold);font-size:.78rem;letter-spacing:.17em}
+h1,h2,h3{font-family:system-ui,sans-serif;font-weight:850;letter-spacing:-.035em}
+h1{line-height:.99;text-transform:uppercase}h2{line-height:1.08}
+.hero{background:linear-gradient(90deg,#051725ed,#051725dd),url('assets/ocean-guardians/reef.webp') center/cover}
+.hero-grid{padding-block:4.8rem;gap:3rem}
+.hero h1{font-size:clamp(2.75rem,5.3vw,5.7rem);color:#fff4d8;text-shadow:0 3px 25px #0008}
+.hero-accent{color:var(--cyan);text-shadow:0 0 24px #18b7c57c}
+.hero p:not(.eyebrow){max-width:36rem;font-size:1.15rem;color:#e1ecea}
+.hero figure img{background:#082b3a;border:2px solid #4bc8c5;box-shadow:0 0 36px #00d1e73d;border-radius:.7rem}
+.hero figcaption{color:#a8d7d5}
+.button,.hero .button{background:#072e3c;color:#e6fffc;border:1px solid #3cf0e5;box-shadow:0 0 16px #15f3f04a;border-radius:.35rem}
+.button:hover,.hero .button:hover{background:#0c5d6a}
+.founding{padding-block:4.2rem}.founding h2{color:#f8e1bb}.founding-intro{color:#c9e0e1}
+.founding-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.founding-card{display:flex;flex-direction:column;background:linear-gradient(180deg,#0b3040,#071c2a);border:1px solid #2a8a94;border-radius:.65rem;box-shadow:0 0 18px #05bcd11f;overflow:hidden}
+.shirt-stage{min-height:0;height:340px;background:radial-gradient(circle at 50% 40%,#1e5663 0%,#0b2b3b 60%,#061822 100%);border-bottom:1px solid #27707a}
+.shirt-stage.light-stage{background:radial-gradient(circle at 50% 45%,#d4c0a0,#625c52 100%)}
+.shirt-silhouette{width:100%;height:100%;max-height:360px}
+.full-shirt{max-height:100%;width:100%;object-fit:contain}
+.shirt-overlay{top:25%;height:51%;left:24%;width:52%}
+.shirt-overlay.badge-art{top:29%;height:43%;left:28%;width:44%}
+.shirt-info{flex:1;min-height:280px;padding:1.1rem 1rem 1.2rem}
+.shirt-info h3{color:#fff5dc;font-size:clamp(1.35rem,1.7vw,1.8rem)}
+.shirt-info p:not(.product-number):not(.availability){color:#c5dedf;font-size:.9rem}
+.product-number{color:var(--cyan);font-size:.67rem;letter-spacing:.1em}
+.availability{color:var(--gold);font-size:.74rem;margin-top:auto!important}
+.product-actions{gap:.45rem}
+.product-actions a{border-color:#42d6d2;color:#d7ffff;font-size:.75rem;line-height:1.2}
+.product-actions a:last-child{background:#0a6370;color:#fff}
+.product-actions a:hover{background:#176c76;color:white}
+.concept-note{color:#b4d4d6}
+.shop-gallery{background:linear-gradient(180deg,#051722,#092f3d);border-top:1px solid #216c7a;border-bottom:1px solid #216c7a}
+.shop-gallery h2{color:#f7dfb9}
+.gallery-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-grid figure{background:#071c2b;border-color:#226b79}
+.gallery-grid img{height:245px;object-fit:contain}
+.gallery-grid figcaption{font-size:.79rem;min-height:4rem}
+#collection h2,.wrap>h2{color:#f8dfb5}
+#collection>p,.wrap>p{color:#c5dedd}
+.card{background:#0b2b39;color:#e8f6f4;border-color:#2b7180}
+.card-art{background:radial-gradient(circle,#155165,#061a28)}
+.card-body .pending{color:var(--gold)}.card-body a{color:#6ee5df}
+.refs a{color:#b7f5f0;text-decoration:none}
+.refs img{border:1px solid #2a7a82;border-radius:.3rem}
+.inquiry{background:linear-gradient(120deg,#103b47,#06232f);border:1px solid #33848b;padding:2.5rem;margin-top:3rem}
+.inquiry h2{color:#ffe0a7}
+footer{border-top:1px solid #266b7a}
+@media(max-width:1150px){.founding-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shirt-info{min-height:0}.shirt-stage{height:370px}}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr;padding-block:2.5rem}.founding-grid,.gallery-grid{grid-template-columns:1fr}.shirt-stage{height:360px}.shirt-info{min-height:0}.gallery-grid img{height:320px}.hero h1{font-size:clamp(2.6rem,11vw,4.3rem)}.links{gap:.7rem;font-size:.75rem}nav img{width:10rem}}
 </style><header><nav class="wrap" aria-label="Main navigation"><a href="./"><img src="assets/jaguar-logo.webp" alt="Jaguar Marine Systems"></a><div class="links"><a href="./#system">The system</a><a href="./references.html">References</a><a href="#shirts" aria-current="page">Merchandise</a><a href="./#contact">Work with us</a></div></nav></header>
 <main><section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">Jaguar Marine Systems merchandise</p><h1>Ocean Guardians <span class="hero-accent">&amp; Reef Restoration</span></h1><p>Discover the founding T-shirt collection: Ocean Guardian #001, modular hex reefs, the Balam Ha jaguar, and our new mangrove–coral restoration artwork.</p><a class="button" href="#shirts">See all four designs</a></div><figure><img src="assets/ocean-guardians/mangrove-hex-concept.svg" alt="Illustrated mangrove–coral ecosystem cube with hex reef and drone seeding"><figcaption>New mangrove–coral integration concept artwork · illustrative only</figcaption></figure></div></section>
 <section class="wrap catalog founding" id="shirts">
@@ -90,7 +147,7 @@ footer{font-size:.83rem}
 </div>
 <p class="concept-note">All shirt images are digital concept previews. Colors, garment selection, print quality, sizes, pricing and release dates are unconfirmed. The hex reef and drone-seeding imagery is illustrative, not an engineering or ecological validation.</p>
 </section>
-<section class="shop-gallery"><div class="wrap"><p class="eyebrow">Art direction / restoration series</p><h2>From mangrove canopy to coral habitat</h2><div class="gallery-grid"><figure><img src="assets/ocean-guardians/mangrove-hex-concept.svg" alt="Three-quarter mangrove ecosystem cube with modular hex reef and coral" loading="lazy"><figcaption>Mangrove–Coral Integration / new illustrated concept</figcaption></figure><figure><img src="assets/ocean-guardians/hex-reef-shirt-concept.svg" alt="Six modular hex reef cells with coral and water" loading="lazy"><figcaption>Hex Reef / new illustrated concept</figcaption></figure></div></div></section>
+<section class="shop-gallery"><div class="wrap"><p class="eyebrow">Original artwork / concept development</p><h2>Explore the Ocean Guardians universe</h2><div class="gallery-grid"><figure><img src="assets/ocean-guardians/hero.webp" alt="Full-color Ocean Guardian character concept surfing a wave" loading="lazy"><figcaption>Ocean Guardian #001 · original full-color character reference</figcaption></figure><figure><img src="assets/ocean-guardians/reef.webp" alt="Ocean Guardians full-color reef and modular habitat concept art" loading="lazy"><figcaption>Ocean Guardians · modular reef and collectible reference</figcaption></figure><figure><img src="assets/ocean-guardians/hex-reef-shirt-concept.svg" alt="Hex reef six-cell illustration" loading="lazy"><figcaption>Hex Reef · current vector concept (print graphic under review)</figcaption></figure><figure><img src="assets/ocean-guardians/mangrove-hex-concept.svg" alt="Mangrove coral ecosystem cube illustration" loading="lazy"><figcaption>Mangrove + Coral · 3/4 ecosystem illustration (concept only)</figcaption></figure></div></div></section>
 <section class="wrap catalog" id="collection"><h2>Other collectibles</h2><p>Figurines, stickers, keychains and collector cards are planned. Prices, shipping and release dates are pending.</p><div id="products" class="grid"></div></section>
 <section class="wrap"><h2>Design references</h2><p>Explore the character, wave shapes, and reef elements behind the figurine. Final configurations and included pieces are pending.</p><div class="refs">
 <a href="assets/ocean-guardians/waves.webp"><img src="assets/ocean-guardians/waves.webp" alt="" loading="lazy">Wave concepts</a>
@@ -99,4 +156,4 @@ footer{font-size:.83rem}
 </div></section>
 <section class="wrap inquiry" id="interest"><h2>Support the project</h2><p>Tell Balam Ha Institute which items you’re interested in, or share the collection with someone who loves the ocean.</p><a class="button" href="mailto:infobalamha@gmail.com?subject=Ocean%20Guardians%20merchandise%20inquiry">Email about the collection</a></section></main>
 <footer><div class="wrap"><span>Jaguar Marine Systems / Balam Ha Institute</span><a href="./">Return to Jaguar Marine Systems</a></div></footer>
-<template id="product-card"><article class="card"><div class="card-art"></div><div class="card-body"><h3></h3><p class="pending"></p><p class="description"></p><a></a></div></article></template><script type="module" src="merchandise-catalog.js?v=20261112d"></script></html>
+<template id="product-card"><article class="card"><div class="card-art"></div><div class="card-body"><h3></h3><p class="pending"></p><p class="description"></p><a></a></div></article></template><script type="module" src="merchandise-catalog.js?v=20261112e"></script></html>
