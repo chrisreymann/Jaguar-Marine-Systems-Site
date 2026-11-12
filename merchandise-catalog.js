@@ -3,29 +3,6 @@
 // Images marked as references are NOT production-ready garment previews.
 const products = [
   {
-    name: 'Ocean Guardian #001 T-shirt',
-    image: 'tee.webp',
-    alt: 'Ocean Guardian #001 T-shirt concept mockup featuring a surfer and coral reef',
-    description: 'Founding Ocean Guardians shirt with a surfer, wave, and coral habitat. Artwork extraction is under print-quality review; color, sizes, price, and release date are pending.'
-  },
-  {
-    name: 'Jaguar Marine Systems Hex Reef T-shirt',
-    imageUrl: 'assets/jaguar-logo.webp',
-    alt: 'Official Jaguar Marine Systems gold jaguar shield logo, shown as a brand reference rather than a shirt mockup',
-    description: 'A planned hexagonal reef engineering-inspired shirt. Official JMS shield shown as a brand reference; final garment graphic and sample are not yet approved.'
-  },
-  {
-    name: 'Balam Ha Institute Jaguar Badge T-shirt',
-    imageUrl: 'assets/balam-ha-institute-seal.webp',
-    alt: 'Official Balam Ha Institute circular seal with a spotted jaguar, shown as a design reference',
-    description: 'A planned institute shirt featuring a recognizably feline jaguar. Official institute seal shown as a reference; simplified apparel badge is being refined.'
-  },
-  {
-    name: 'Mangrove–Coral Integration T-shirt',
-    artworkStatus: 'Mangrove + hex reef artwork in review',
-    description: 'A new concept featuring mangroves, a modular hex reef, coral habitat, and exploratory drone seeding. Final print artwork, colors, and product details are pending.'
-  },
-  {
     name: 'Ocean Hero figurines',
     image: 'hero.webp',
     alt: 'Ocean Guardian #001 surfer with a wave and reef display base, concept artwork',
