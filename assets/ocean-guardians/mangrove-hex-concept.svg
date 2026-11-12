@@ -1,21 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
-<title id="title">Mangrove reef hex habitat concept</title><desc id="desc">Stylized mangrove trees above six hexagonal reef modules, with coral below. Concept illustration only.</desc>
-<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#082734"/><stop offset="1" stop-color="#04121e"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#169ca6"/><stop offset="1" stop-color="#06435b"/></linearGradient></defs>
-<rect width="800" height="620" fill="url(#bg)"/><circle cx="636" cy="120" r="68" fill="#e9ac66" opacity=".9"/>
-<path d="M0 290 Q80 265 160 289 T320 290 T480 290 T640 290 T800 290 V620 H0Z" fill="url(#sea)" opacity=".8"/>
-<g fill="none" stroke="#e9c68a" stroke-width="13" stroke-linejoin="round">
-<path d="M250 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M430 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M340 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/>
-<path d="M70 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M520 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M160 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/></g>
-<g fill="none" stroke="#865b3d" stroke-width="11" stroke-linecap="round">
-<path d="M275 268 Q264 220 258 167 L252 102"/><path d="M258 174 Q220 240 185 273 M258 174 Q290 236 333 278 M258 174 Q255 230 243 282"/>
-<path d="M535 260 Q525 208 532 151 L540 90"/><path d="M530 170 Q484 220 465 269 M530 170 Q561 238 602 271 M530 170 Q526 238 510 285"/></g>
-<g fill="#29976d" stroke="#86bc75" stroke-width="4">
-<ellipse cx="215" cy="110" rx="85" ry="48"/><ellipse cx="297" cy="95" rx="89" ry="53"/><ellipse cx="260" cy="66" rx="76" ry="43"/>
-<ellipse cx="475" cy="103" rx="83" ry="46"/><ellipse cx="565" cy="92" rx="92" ry="52"/><ellipse cx="531" cy="62" rx="78" ry="43"/></g>
-<g fill="none" stroke="#ff947e" stroke-width="9" stroke-linecap="round">
-<path d="M151 441 v-48 m0 25 l-30 -29 m30 18 l29 -33 M322 446 v-46 m0 20 l-26 -31 m26 20 l26 -25 M540 442 v-48 m0 24 l-28 -24 m28 12 l24 -28 M624 286 v-35 m0 18 l-20 -21 m20 13 l17 -22"/></g>
-<g fill="#f6c776"><circle cx="112" cy="397" r="6"/><circle cx="359" cy="415" r="6"/><circle cx="576" cy="409" r="6"/></g>
-<path d="M0 551 Q200 526 400 549 T800 545" stroke="#6dd9d0" stroke-width="4" fill="none" opacity=".5"/>
-<text x="400" y="580" font-family="Arial,sans-serif" font-size="25" fill="#fff4d6" text-anchor="middle" letter-spacing="3">MANGROVE + HEX REEF</text>
-<text x="400" y="605" font-family="Arial,sans-serif" font-size="14" fill="#8dd9d5" text-anchor="middle" letter-spacing="2">ILLUSTRATIVE CONCEPT</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title description">
+<title id="title">Mangrove reef integration and drone seeding concept art</title><desc id="description">Isometric cutaway ecosystem cube with mangroves, underwater coral, hexagonal modular reef, and conceptual seeding drone. Not an engineering model.</desc>
+<defs><linearGradient id="water" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#32d5c4" stop-opacity=".8"/><stop offset="1" stop-color="#065475" stop-opacity=".95"/></linearGradient><linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#107f92"/><stop offset="1" stop-color="#042e51"/></linearGradient><linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b99a6d"/><stop offset="1" stop-color="#67534a"/></linearGradient><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e1c5"/><stop offset="1" stop-color="#63888c"/></linearGradient><g id="tree"><path d="M0 0Q-4-60 0-115" fill="none" stroke="#925a3b" stroke-width="14"/><g fill="none" stroke="#a36b46" stroke-width="9" stroke-linecap="round"><path d="M0-70Q-34-42-53 0M0-70Q30-35 56 0M0-70Q-9-35-18 0M0-70Q10-27 23 0M0-90Q-44-80-55-102M0-90Q36-88 57-105"/></g><g fill="#368a58" stroke="#8bcf78" stroke-width="4"><ellipse cx="-45" cy="-129" rx="55" ry="36"/><ellipse cx="18" cy="-149" rx="63" ry="45"/><ellipse cx="69" cy="-127" rx="51" ry="34"/><ellipse cx="-5" cy="-173" rx="56" ry="37"/></g><g fill="#a7d67e"><circle cx="-44" cy="-139" r="5"/><circle cx="31" cy="-175" r="5"/><circle cx="76" cy="-128" r="5"/></g></g><g id="coral" stroke-linecap="round" fill="none"><path d="M0 0V-48m0 20-25-30M0-18l27-37M-11-40l-13-5M18-38l13-12" stroke="#fa967e" stroke-width="8"/><path d="M16 0v-32m0 15 18-22" stroke="#f6c56c" stroke-width="7"/></g></defs>
+<g font-family="Arial,sans-serif" text-anchor="middle"><text x="500" y="83" font-size="54" fill="#f9e5c0" font-weight="900" letter-spacing="4">MANGROVE + REEF</text><text x="500" y="125" font-size="26" fill="#7de1d0" font-weight="700" letter-spacing="7">RESTORATION CONCEPT</text></g>
+<path d="M150 380L510 218L860 370L500 536Z" fill="#2daea9" opacity=".7" stroke="#9ae6d7" stroke-width="7"/>
+<path d="M150 380L500 536V825L150 652Z" fill="url(#side)" stroke="#8dd9d5" stroke-width="6"/>
+<path d="M500 536L860 370V661L500 825Z" fill="url(#water)" stroke="#8dd9d5" stroke-width="6"/>
+<path d="M150 635L500 805L860 646V685L500 850L150 675Z" fill="url(#sand)" stroke="#bba481" stroke-width="5"/>
+<g opacity=".4" fill="none" stroke="#b7ffef" stroke-width="3"><path d="M175 411l318 151 343-154M165 452l330 152 355-159M175 500l320 148 345-155"/></g>
+<g fill="none" stroke="url(#metal)" stroke-width="19" stroke-linejoin="round"><path d="M289 443l82-39 80 36-82 40Z"/><path d="M453 442l80-38 80 38-80 41Z"/><path d="M370 483l82-40 80 40-80 41Z"/><path d="M535 483l82-40 82 40-82 41Z"/><path d="M452 526l82-40 81 39-81 40Z"/></g>
+<g fill="none" stroke="#e4cba2" stroke-width="12" opacity=".9"><path d="M300 456v108l72 35 0-111M453 452v111l80 39v-111M535 495v109l79 38v-111"/></g>
+<g><use href="#tree" transform="translate(298 358) scale(1.05)"/><use href="#tree" transform="translate(470 307) scale(.82)"/><use href="#tree" transform="translate(620 347) scale(.72)"/></g>
+<g><use href="#coral" transform="translate(250 640) scale(.95)"/><use href="#coral" transform="translate(345 684) scale(.85)"/><use href="#coral" transform="translate(576 702) scale(1.1)"/><use href="#coral" transform="translate(755 626) scale(.9)"/></g>
+<g fill="#f3d38c"><path d="M208 551l28-9-5 9 5 9z"/><path d="M670 561l29-9-5 9 5 9z"/><path d="M744 535l28-9-5 9 5 9z"/><path d="M398 654l26-8-4 8 4 8z"/></g>
+<g transform="translate(738 203)" fill="none" stroke="#d6e5d9" stroke-width="8" stroke-linecap="round"><path d="M-73-40L73 40M-73 40L73-40"/><rect x="-34" y="-24" width="68" height="48" rx="15" fill="#193a49" stroke="#7edbd0"/><ellipse cx="-75" cy="-42" rx="39" ry="13" stroke="#72d9e1" stroke-width="5"/><ellipse cx="75" cy="-42" rx="39" ry="13" stroke="#72d9e1" stroke-width="5"/><ellipse cx="-75" cy="42" rx="39" ry="13" stroke="#72d9e1" stroke-width="5"/><ellipse cx="75" cy="42" rx="39" ry="13" stroke="#72d9e1" stroke-width="5"/></g>
+<g stroke="#f4c46c" stroke-width="5" stroke-dasharray="3 15" stroke-linecap="round"><path d="M739 244q-15 38-17 93"/></g><g fill="#f6c779"><ellipse cx="721" cy="304" rx="5" ry="14"/><ellipse cx="718" cy="342" rx="5" ry="14"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle"><text x="500" y="921" font-size="28" fill="#f3dfb7" font-weight="800" letter-spacing="4">JAGUAR MARINE SYSTEMS</text><text x="500" y="958" font-size="18" fill="#9de5d6" letter-spacing="4">HEX HABITAT  •  CORAL NURSERY  •  DRONE SEEDING</text></g></svg>
