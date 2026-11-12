@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+<title id="title">Mangrove reef hex habitat concept</title><desc id="desc">Stylized mangrove trees above six hexagonal reef modules, with coral below. Concept illustration only.</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#082734"/><stop offset="1" stop-color="#04121e"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#169ca6"/><stop offset="1" stop-color="#06435b"/></linearGradient></defs>
+<rect width="800" height="620" fill="url(#bg)"/><circle cx="636" cy="120" r="68" fill="#e9ac66" opacity=".9"/>
+<path d="M0 290 Q80 265 160 289 T320 290 T480 290 T640 290 T800 290 V620 H0Z" fill="url(#sea)" opacity=".8"/>
+<g fill="none" stroke="#e9c68a" stroke-width="13" stroke-linejoin="round">
+<path d="M250 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M430 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M340 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/>
+<path d="M70 350 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M520 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/><path d="M160 196 l90 -52 90 52 0 104 -90 52 -90 -52Z"/></g>
+<g fill="none" stroke="#865b3d" stroke-width="11" stroke-linecap="round">
+<path d="M275 268 Q264 220 258 167 L252 102"/><path d="M258 174 Q220 240 185 273 M258 174 Q290 236 333 278 M258 174 Q255 230 243 282"/>
+<path d="M535 260 Q525 208 532 151 L540 90"/><path d="M530 170 Q484 220 465 269 M530 170 Q561 238 602 271 M530 170 Q526 238 510 285"/></g>
+<g fill="#29976d" stroke="#86bc75" stroke-width="4">
+<ellipse cx="215" cy="110" rx="85" ry="48"/><ellipse cx="297" cy="95" rx="89" ry="53"/><ellipse cx="260" cy="66" rx="76" ry="43"/>
+<ellipse cx="475" cy="103" rx="83" ry="46"/><ellipse cx="565" cy="92" rx="92" ry="52"/><ellipse cx="531" cy="62" rx="78" ry="43"/></g>
+<g fill="none" stroke="#ff947e" stroke-width="9" stroke-linecap="round">
+<path d="M151 441 v-48 m0 25 l-30 -29 m30 18 l29 -33 M322 446 v-46 m0 20 l-26 -31 m26 20 l26 -25 M540 442 v-48 m0 24 l-28 -24 m28 12 l24 -28 M624 286 v-35 m0 18 l-20 -21 m20 13 l17 -22"/></g>
+<g fill="#f6c776"><circle cx="112" cy="397" r="6"/><circle cx="359" cy="415" r="6"/><circle cx="576" cy="409" r="6"/></g>
+<path d="M0 551 Q200 526 400 549 T800 545" stroke="#6dd9d0" stroke-width="4" fill="none" opacity=".5"/>
+<text x="400" y="580" font-family="Arial,sans-serif" font-size="25" fill="#fff4d6" text-anchor="middle" letter-spacing="3">MANGROVE + HEX REEF</text>
+<text x="400" y="605" font-family="Arial,sans-serif" font-size="14" fill="#8dd9d5" text-anchor="middle" letter-spacing="2">ILLUSTRATIVE CONCEPT</text>
+</svg>
