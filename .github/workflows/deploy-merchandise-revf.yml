@@ -1,0 +1,21 @@
+name: Publish approved Rev F merchandise previews
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'incoming/JMS_Merchandise_RevF_Publish_Package.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: jms-merchandise-revf
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify exact approved ZIP and publish artwork
+        run: python3 scripts/deploy_merchandise_revf.py
