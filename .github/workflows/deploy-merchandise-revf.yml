@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'incoming/JMS_Merchandise_RevF_Publish_Package.zip'
+      - 'incoming/*.zip'
+      - 'scripts/deploy_merchandise_revf.py'
   workflow_dispatch:
 permissions:
   contents: write
